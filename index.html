@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <script src="./scripts/index.js"></script>
+</head>
+<body>
+    <div class="main-page">
+        <div class="hover-title" onmouseover="mouseover(false)">Hover title under ^-^</div>
+        <div class="title" onmouseover="mouseover(true)">
+            hover me ^-^
+        </div>
+    </div>
+    <div class="second-page" style="display: none;">
+        <svg onclick="clickButton()" class="button-open-menu" width="27" height="28" viewBox="0 0 27 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="button" width="27" height="3" fill="white"/>
+            <rect class="button" y="12.2867" width="27" height="3" fill="white"/>
+            <rect class="button" y="24.5735" width="27" height="3" fill="white"/>
+        </svg>
+
+        <div id="second-title" class="title" onclick="changePage('second-page','main-page')">
+            Click to go back
+        </div>
+        <div class="page-slider">
+            <div class="item">
+                <div class="button-slider active-button"></div>
+            </div>
+            <div class="item">
+                <div class="button-slider"></div>
+            </div>
+            <div class="item">
+                <div class="button-slider"></div>
+            </div>
+            <div class="item">
+                <div class="button-slider"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
