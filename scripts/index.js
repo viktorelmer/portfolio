@@ -41,6 +41,7 @@ const clickButton = () => {
     let secondTitle = document.getElementById('second-title')
     let secondPage = document.getElementsByClassName('second-page')[0]
     if (buttonState === true) {
+        document.getElementsByTagName("p")[0].style.color = "#000"
         button2.style.opacity = 0
         button3.classList = 'button activate-3'
         button1.classList = 'button activate-1'
@@ -107,16 +108,27 @@ const clickButton = () => {
                     }
                 }
             }
+            
+            function checkScrollDirectionIsUp(event) {
+                if (event.wheelDelta) {
+                    return event.wheelDelta > 0;
+                }
+                return event.deltaY < 0;
+            }
         }
 
-        function checkScrollDirectionIsUp(event) {
-            if (event.wheelDelta) {
-                return event.wheelDelta > 0;
-            }
-            return event.deltaY < 0;
-        }
 
     } else {
+        secondPage.removeEventListener('wheel', checkScrollDirection)
+        isInScroll = false
+        document.getElementsByTagName("p")[0].style.color = "#FFF"
+        let items = document.getElementsByClassName("button-slider")
+        for (let x = 0; x < items.length; x++) {
+            items[x].classList = "button-slider"
+            if (x === 0) {
+                items[x].classList = "button-slider active-button"
+            }
+        }
         document.getElementsByClassName('second-page')[0].style.background = '#000'
         let headTitle = document.getElementsByClassName("second-head-title")[0]
         let lessTitle = document.getElementsByClassName("less-head-title")[0]

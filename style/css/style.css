@@ -7,6 +7,7 @@
 
 body {
     margin: 0;
+    height: 100vh;
     background: #000;
     font-family: "SF UI Text Regular";
     font-style: normal;
@@ -19,6 +20,7 @@ body {
     body {
         margin: 0;
         background: #000;
+        height: 100%;
         font-family: "SF UI Text Regular";
         font-style: normal;
         font-weight: normal;
@@ -34,6 +36,13 @@ body {
     .second-page > .less-head-title {
         display: block !important;
     }
+}
+p {
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    left: 0;
+    font-size: 10px;
 }
 
 .main-page,
