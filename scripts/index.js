@@ -12,7 +12,7 @@ const cfg = {
         10: 'U think here hiden easter egg?',
         11: 'Nope, here just nothing ^-^',
     },
-    maxPages: 3,
+    maxPages: 2,
     pagesText: {
         0: [`I’m full-stack JS developer. My carier started in 2016, when i open FiveM (GTA 5 based online engine).
             First of all, in my head became idea to create my own server, but without knowlege in scripting i started to rewrite existed scripts and saw whats were happend. 
@@ -26,8 +26,7 @@ const cfg = {
         1: [`<iframe width="420" height="375" src="https://www.youtube.com/embed/c9zDlw8LWqQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="420" height="375" src="https://www.youtube.com/embed/jJmL3TuE4Dk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="420" height="375" src="https://www.youtube.com/embed/npqxS4MbjH0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`, 'Some of my works'],
-        2: [`Some other text for third page`, 'some more more text'],
-        3: [`Conctact me via discord - viktorelmer#9834 or vk - vk.com/mr_elk2015`, 'Tnx for visit my cite'],
+        2: [`Conctact me via discord - viktorelmer#9834 or vk - vk.com/mr_elk2015`, 'Tnx for visit my site'],
     }
 }
 
@@ -108,7 +107,7 @@ const clickButton = () => {
                     }
                 }
             }
-            
+
             function checkScrollDirectionIsUp(event) {
                 if (event.wheelDelta) {
                     return event.wheelDelta > 0;
